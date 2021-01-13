@@ -1,0 +1,23 @@
+.input-altura {
+  position: absolute;
+  top: 60px;
+  left: 195px;
+}
+
+.input-profundidade {
+  position: absolute;
+  top: 160px;
+  left: 175px;
+}
+
+.input-cubagem {
+  width: 120px;
+}
+
+.inputs-metade {
+  width: 50%;
+}
+
+.barra-botao {
+  text-align: right;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de frete</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilo.css" />    
+  </head>
+  <body>
+    <h1>Sistema de Cálculo de frete</h1>
+    <hr />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div>Dimensões</div>
+          <img src="./img/cubo.jpg" alt="" />
+          <div class="input-altura">
+            <input
+              id="txtAltura"
+              class="input-cubagem"
+              placeholder="altura"
+              type="number"
+            />
+            cm
+          </div>
+          <div class="input-profundidade">
+            <input
+              id="txtProfundidade"
+              class="input-cubagem"
+              placeholder="profundidade"
+              type="number"
+            />
+            cm
+          </div>
+          <div class="input-largura">
+            <input
+              id="txtLargura"
+              class="input-cubagem"
+              placeholder="largura"
+              type="number"
+            />
+            cm
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inputs-metade mt-3 mt-md-0">
+            <label>Peso (Kg)</label>
+            <input id="txtPeso" class="form-control" type="number" />
+          </div>
+          <div class="inputs-metade mt-3 mb-3">
+            <input id="chkFragil" type="checkbox" />
+            <label class="form-check-label">Item frágil?</label>
+          </div>
+          <div class="inputs-metade">
+            <label>Distância (Km)</label>
+            <input id="txtDistancia" class="form-control" type="number" />
+          </div>
+          <div class="barra-botao">
+            <button id="btnCalcular" class="btn btn-primary">Calcular</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 id="lblValorFrete"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="./js/calculoFrete.js"></script>
+  </body>
+</html>
